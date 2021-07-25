@@ -17,7 +17,7 @@ function loaded() {
 var x = 0;
 
 //var titleText = ["FR", "FRE", "FREA", "FREAK", "FREAKI", "FREAKIS", "FREAKISH", "FREAKIS", "FREAKI", "FREAK", "FREA", "FRE", "FR", "F"];
-var titleText = ["F-------", "FR------", "FRE-----", "FREA----", "FREAK---", "FREAKI--", "FREAKIS-", "FREAKISH", "-REAKISH", "--EAKISH", "---AKISH", "----KISH", "-----ISH", "------SH", "-------H", "--------"];
+var titleText = ["F_______", "FR______", "FRE_____", "FREA____", "FREAK___", "FREAKI__", "FREAKIS_", "FREAKISH", "_REAKISH", "__EAKISH", "___AKISH", "____KISH", "_____ISH", "______SH", "_______H", "________"];
 
 function loop() {
     document.getElementsByTagName("title")[0].innerHTML = titleText[x++ % titleText.length];
