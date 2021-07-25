@@ -1,0 +1,157 @@
+@font-face {
+    font-family: roboto;
+    src: url("/fonts/Roboto-Regular.ttf");
+}
+
+.rainbow {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("/images/rainbowText.gif");
+}
+
+.animatedPurpleGradient {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("/images/animatedPurpleGrad.gif");
+}
+
+.animatedPixelRainbow {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("/images/animPixelRainbow.gif");
+}
+
+
+.underlined {
+    text-decoration: underline;
+}
+
+.dashed {
+    text-decoration: dashed; /* no idea what this does but sounds kool */
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/pogbg.png');
+    background-size: 100% auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgb(207, 16, 105);
+    text-align: center;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+}
+
+.floating { 
+	animation-name: floating; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite; 
+	animation-timing-function: ease-in-out; 
+	/*margin-left: 30px; 
+	margin-top: 5px; */
+} 
+
+@keyframes floating { 
+	0% { transform: translate(0, 0px); } 
+	50% { transform: translate(0, 15px); } 
+	100% { transform: translate(0, -0px); }	 
+} 
+
+.header {
+    padding-top: 5px;
+    font-size: 1vw;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+.firstCaps {
+    text-transform: capitalize;
+}
+.lower {
+    text-transform: lowercase;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: url('/images/animatedPurpleGrad.gif');
+    border-radius: 6px;
+}
+/* 
+    attension:
+        this scrollbar is so pog it could give you brain damage looking at the code !
+*/
+
+.pogimage {
+    display: inline-block;
+    border-radius: 0.2em;
+    width: 25%;
+    padding-top: 5px;
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+.headdiv {
+    background-color: rgba(37, 31, 31, 0.527);
+    display: inline-block;
+    width: 60%;
+    height: 10%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.lmao:link {
+    text-decoration: none;
+}
+.lmao:visited {
+    text-decoration: none;
+}
+.lmao:hover {
+    text-decoration: none;
+}
+.lmao:active {
+    text-decoration: none;
+}
+
+.noDrag {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+}
